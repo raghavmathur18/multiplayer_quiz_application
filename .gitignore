@@ -1,0 +1,22 @@
+target/
+
+# Maven local cache if created inside the project
+.m2/
+
+# Java build output
+*.class
+*.jar
+*.war
+*.ear
+
+# IDE settings
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

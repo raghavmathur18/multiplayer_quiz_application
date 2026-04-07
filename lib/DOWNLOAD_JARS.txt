@@ -1,0 +1,21 @@
+============================================================
+Required JAR Libraries — Download These Before Building
+============================================================
+
+Place BOTH jars in this folder (QuizApp/lib/) before running build.sh or build.bat
+
+1. MySQL JDBC Driver (mysql-connector-java-8.0.33.jar)
+   URL: https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.33/mysql-connector-java-8.0.33.jar
+   OR:  https://dev.mysql.com/downloads/connector/j/
+
+2. JFreeChart (jfreechart-1.5.4.jar)
+   URL: https://repo1.maven.org/maven2/org/jfree/jfreechart/1.5.4/jfreechart-1.5.4.jar
+   OR:  https://github.com/jfree/jfreechart/releases
+
+After downloading both JARs, run:
+   Linux/Mac:  ./build.sh
+   Windows:    build.bat
+
+OR use Maven (if internet is available):
+   mvn clean package
+   java -jar target/QuizArena-Client.jar
