@@ -17,6 +17,7 @@ COPY backend/src ./src
 # Copy the built frontend into static resources
 COPY --from=frontend-build /app/frontend/dist ./src/main/resources/static
 # Build the application
+RUN chmod +x ./gradlew
 RUN ./gradlew clean build -x test
 
 # Stage 3: Run the Application
