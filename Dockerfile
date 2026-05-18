@@ -28,5 +28,5 @@ COPY --from=backend-build /app/backend/build/libs/*.jar app.jar
 EXPOSE 8080
 
 # Set JVM memory limits to prevent OOM kills on Render's free tier (512MB max)
-ENV JAVA_OPTS="-Xmx256m -Xms128m -Xss512k -XX:MaxMetaspaceSize=128m"
+ENV JAVA_OPTS="-Xmx200m -Xms100m -Xss512k -XX:MaxMetaspaceSize=100m"
 ENTRYPOINT ["sh", "-c", "java $JAVA_OPTS -jar app.jar"]
